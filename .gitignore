@@ -1,0 +1,15 @@
+# Tools we can't distribute here
+dat-tex-wiz/
+crazy-hand/
+
+# Random files
+*.txt
+*.cfg
+.wine/
+
+# Melee
+*.iso
+
+# Output
+*.patch
+
