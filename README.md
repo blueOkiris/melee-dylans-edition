@@ -10,9 +10,15 @@ Created using these fine tools:
 - DAT Texture Wizard
 - The Melee Decompilation Effort
 
-Changes from base game:
+Engine changes from base game:
 
-- Universal Wall Jump Mechanic - All characters can now wall jump
+- Universal Wall Jump Mechanic
+   + I.e. all characters can now wall jump
+- Universal 4-Frame L-Cancelling:
+   + Every L-cancelled aerial has a lag of 4 frame instead of the lag getting divided by some factor. Very similar to Smash 64's Z-cancelling
+   + No longer feels like "negative when missed" but rather "positive when hit."
+   + Also, bigger L-Cancel window (10 frames)
+   + 4 Frames so you don't accidentally shield after (4-frames is typically base landing lag as well)
 
 ## Patching an ISO
 
