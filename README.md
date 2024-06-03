@@ -25,7 +25,7 @@ Dependencies:
 
 1. Create a copy of your Melee iso in the repo (since you probably don't want to alter your main one)
 2. Download the patch from the Releases section
-3. Run the command `xdelta3 -d -s vanilla-melee.iso melee-dylans-edition-<version>.patch`
+3. Run the command `xdelta3 -d -s vanilla-melee.iso melee-dylans-edition-<version>.patch SSBMDE.iso`
 
 ## Building (To Create a Patch)
 
