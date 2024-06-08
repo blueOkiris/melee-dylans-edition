@@ -20,6 +20,34 @@ Engine changes from base game:
    + Also, bigger L-Cancel window (10 frames)
    + 4 Frames so you don't accidentally shield after (4-frames is typically base landing lag as well)
 
+Character-specific changes from base game:
+
+- Game & Watch as a Functioning Character (ongoing):
+   + Shield Size: 10.75 -> 18 (just enough to cover himself)
+   + Weight: 60 -> 70 (same as Kirby but higher than Puff; still dies early, but not absurdly so since he doesn't have a kit to make up for it)
+   + Wall Jump H Vel and V Vel: 1.3, 2.3 -> 1.0, 1.8 (makes it so he doesn't just die from using it now that he has one)
+   + Up-B
+      * Angle: .524 (30 degrees) -> 1.047 (60 degrees)
+      * Landing Lag: 40 -> 30
+      * Can face any direction
+   + Down-Smash: (actually a kill move):
+      * Angles: 20, 80 -> 361, 90 (kill top easier and down sdi causes off stage bad angle)
+      * Knockback: 10, 60 -> 40, 60 (stronger edge hitbox)
+      * Knockback Growth: 50, 90 -> 70, 90 (strong edge hitbox)
+      * Swap X Offsets and to 3400, 1600 and size to 800, 1400 (bc it makes more sense; edge of hammer sends out, while meat of it sends up)
+   + Spot Dodge: 2-12-20 -> 2-16-8 (based on Fox's; an actually useful spot dodge)
+   + Bacon:
+      * Angle: 70 -> 90 (Help in setting up follow ups for getting in)
+      * Attribute: Normal -> Fire (It's hot bacon; makes sense)
+      * Damage: 4 -> 6 (Indirectly increases hitstun)
+      * Frame Rep Hit Starts On: 3 -> 1 (can shoot out the bacon quickly)
+      * Count: 5 -> 3 (nerf to couteract speed buffs)
+      * Hspeed, Vspeed: 1.0, 1.0 -> 2.5, 0.5 (more useful in neutral than slow up)
+      * Duration stale rests on ground: 30 -> 60 (can be used to set traps)
+      * Ground: 1, 18, 20, 22, 35 -> 1, 8, 1, 1, 13 (to make the 3 come out faster)
+      * I would do Air: 1, 16, 30 -> 1, 6, 11 (same but air) BUT it messes up side-b for some reason, so it's left alone. Air is now slower than ground
+   + TODO: Fix absurd down-b lag and incentivize use and make aerials actually aerials not special moves (allow L-cancelling)
+
 ## Patching an ISO
 
 Dependencies:
