@@ -19,6 +19,28 @@ Engine changes from base game:
    + No longer feels like "negative when missed" but rather "positive when hit."
    + Also, bigger L-Cancel window (10 frames)
    + 4 Frames so you don't accidentally shield after (4-frames is typically base landing lag as well)
+- Universal 4-Frame Jump Squat
+   + Consequence of consistent wave dash as well
+   + 4 Frames because that's the most common jump squat
+   + Not really Nerf/Buff I think (except *maybe* Fox nerf bc he's so technical and a huge buff to G-dorf and Bowser), but potentially:
+      * Buffs:
+         - DK
+         - Ganondorf
+         - Falco
+         - Bowser
+         - Puff
+         - Link
+         - Mewtwo
+         - Roy
+         - Yoshi
+         - Zelda
+      * Nerfs:
+         - Fox
+         - ICs
+         - Kirby
+         - Pichu
+         - Pikachu
+         - Samus
 
 Character-specific changes from base game:
 
