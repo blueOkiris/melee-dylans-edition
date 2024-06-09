@@ -43,6 +43,7 @@ Engine changes from base game:
          - Pikachu
          - Samus
 - Default to tournament settings and characters and stages unlocked by default
+- C-Stick in 1P modes
 
 Character-specific changes from base game:
 
@@ -72,6 +73,8 @@ Character-specific changes from base game:
       * Ground: 1, 18, 20, 22, 35 -> 1, 8, 1, 1, 13 (to make the 3 come out faster)
       * I would do Air: 1, 16, 30 -> 1, 6, 11 (same but air) BUT it messes up side-b for some reason, so it's left alone. Air is now slower than ground
    + TODO: Fix absurd down-b lag and incentivize use
+- Bowser:
+   + 1.00 Flame Cancelling returns
 
 ## Patching an ISO
 
