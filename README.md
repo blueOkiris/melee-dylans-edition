@@ -8,6 +8,7 @@ Created using these fine tools:
 
 - Crazy Hand
 - DAT Texture Wizard
+- Melee Code Manager
 - The Melee Decompilation Effort
 
 Engine changes from base game:
@@ -41,6 +42,7 @@ Engine changes from base game:
          - Pichu
          - Pikachu
          - Samus
+- Default to tournament settings and characters and stages unlocked by default
 
 Character-specific changes from base game:
 
@@ -92,6 +94,7 @@ Dependencies:
 - Clone the repo then do: `git submodule update --init --recursive`
 - Crazy Hand v1.31 (rename in your repo to `crazy-hand`)
 - DAT Texture Wizard v6.1.4 (rename in your repo to `dat-tex-wiz`)
+- Melee Code Manager v4.4.1 (rename in your repo to `melee-code-mgr`)
 - A legally obtained copy of Super Smash Bros. Melee. Why?
    1) The decomp is not complete
    2) The art assets are not owned by you or I and cannot under any circumstances be distributed
@@ -119,5 +122,9 @@ Dependencies:
 9. Open a terminal and navigate to the `<repo>/crazy-hand/` folder you created. Start crazy hand with the command `java -jar Crazy\ Hand\ v1.31.jar`
 10. Select each of the changed characters and load their patch from `<repo>/char-mods/<character>.dat`
 11. Save your changes and close Crazy Hand
-12. Create a patch via `xdelta3 -e -s vanilla-melee.iso dylans-edition.iso melee-dylans-edition-<version>.patch`
+12. Open up Melee Code Manager and open the iso in it
+13. Go to "Default Game Settings," select set to Tournament Defaults and save
+14. Go to "Mods Library" and add a path to "mcm-mods.txt"
+15. Enable the Unlock mod
+16. Create a patch via `xdelta3 -e -s vanilla-melee.iso dylans-edition.iso melee-dylans-edition-<version>.patch`
 

@@ -1,9 +1,10 @@
 # Tools we can't distribute here
 dat-tex-wiz/
 crazy-hand/
+melee-code-mgr/
 
 # Random files
-*.txt
+Error Log.txt
 *.cfg
 .wine/
 
