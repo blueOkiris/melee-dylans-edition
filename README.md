@@ -47,6 +47,7 @@ Engine changes from base game:
 Character-specific changes from base game:
 
 - Game & Watch as a Functioning Character (ongoing):
+   + All Aerials L-Cancellable
    + Shield Size: 10.75 -> 18 (just enough to cover himself)
    + Weight: 60 -> 70 (same as Kirby but higher than Puff; still dies early, but not absurdly so since he doesn't have a kit to make up for it)
    + Wall Jump H Vel and V Vel: 1.3, 2.3 -> 1.0, 1.8 (makes it so he doesn't just die from using it now that he has one)
@@ -70,7 +71,7 @@ Character-specific changes from base game:
       * Duration stale rests on ground: 30 -> 60 (can be used to set traps)
       * Ground: 1, 18, 20, 22, 35 -> 1, 8, 1, 1, 13 (to make the 3 come out faster)
       * I would do Air: 1, 16, 30 -> 1, 6, 11 (same but air) BUT it messes up side-b for some reason, so it's left alone. Air is now slower than ground
-   + TODO: Fix absurd down-b lag and incentivize use and make aerials actually aerials not special moves (allow L-cancelling)
+   + TODO: Fix absurd down-b lag and incentivize use
 
 ## Patching an ISO
 
