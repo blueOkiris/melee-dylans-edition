@@ -60,7 +60,7 @@ Character-specific changes from base game:
       * Angles: 20, 80 -> 361, 90 (kill top easier and down sdi causes off stage bad angle)
       * Knockback: 10, 60 -> 40, 60 (stronger edge hitbox)
       * Knockback Growth: 50, 90 -> 70, 90 (strong edge hitbox)
-      * Swap X Offsets and to 3400, 1600 and size to 800, 1400 (bc it makes more sense; edge of hammer sends out, while meat of it sends up)
+      * Swap X Offsets and to 3400, 2000 and size to 600, 1600 (bc it makes more sense; edge of hammer sends out, while meat of it sends up)
    + Spot Dodge: 2-12-20 -> 2-16-8 (based on Fox's; an actually useful spot dodge)
    + Bacon:
       * Angle: 70 -> 90 (Help in setting up follow ups for getting in)
