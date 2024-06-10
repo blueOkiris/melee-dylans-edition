@@ -9,6 +9,7 @@ Created using these fine tools:
 - Crazy Hand
 - DAT Texture Wizard
 - Melee Code Manager
+- Melee Mod Manager
 - The Melee Decompilation Effort
 
 Engine changes from base game:
@@ -47,6 +48,9 @@ Engine changes from base game:
 
 Character-specific changes from base game:
 
+- Default to Sheik at CSS
+- Bowser:
+   + 1.00 Flame Cancelling returns
 - Game & Watch as a Functioning Character (ongoing):
    + All Aerials L-Cancellable
    + Shield Size: 10.75 -> 18 (just enough to cover himself)
@@ -73,8 +77,30 @@ Character-specific changes from base game:
       * Ground: 1, 18, 20, 22, 35 -> 1, 8, 1, 1, 13 (to make the 3 come out faster)
       * I would do Air: 1, 16, 30 -> 1, 6, 11 (same but air) BUT it messes up side-b for some reason, so it's left alone. Air is now slower than ground
    + TODO: Fix absurd down-b lag and incentivize use
-- Bowser:
-   + 1.00 Flame Cancelling returns
+- Young Link + Link Merge -> Link
+   + Link is base as he is the better overall character with stronger attacks
+   + Link gets a bit of a speed boost and movement boost; still slow, but a bit faster
+      - Dash: 1.3 -> 1.6 (YL's)
+      - Lower Traction: 1.0 -> 0.8 (YL's)
+      - Full Hop: 2.5 -> 2.6 (YL's)
+      - Term Vel: 1.3 -> 1.6 (YL's)
+   + D-Air
+      - Copy over YL's 3rd hitbox w/ Meteor smash
+      - Y-Offset: 500, Size: 500
+      - Existing Ones Moved up: 1800 -> 2000, 1080 -> 1400
+   + Arrow (Match YL Fire Arrow)
+      - Attr: Slash -> Fire
+      - Model: 64 -> 65
+      - Gravity: 0.053 -> 0.08 (greater than YL's)
+      - Weight: 0.698 -> 1.5 (greater drop than YL's)
+      - Damage: 5 -> 8
+      - Arrow Lifetime: 50 -> 100 (helps with traps as you can't L-cancel on them)
+   + Boomerang:
+      - Smash Launch: 3.1 -> 2.1
+      - Regular: 2.4 -> 2.0
+      - Angle: 0.4537856 -> 0.87266463 (YL's)
+   + Shortening: Model Scale 1.22 -> 1.15
+   + YL Removed from CSS (TODO; rn he just is a second Link icon)
 
 ## Patching an ISO
 
@@ -122,13 +148,14 @@ Dependencies:
 5. Open a terminal and navigate to `<repo>/code/`
 6. Run `python configure.py` then `ninja` to build a new main.dol in `<repo>/code/build/main.dol`
 7. Go back to GALE01/System Files/ and select "Start.dol" again, but this time import the new `<repo>/code/build/main.dol` and save
-8. Close D.T.W
-9. Open a terminal and navigate to the `<repo>/crazy-hand/` folder you created. Start crazy hand with the command `java -jar Crazy\ Hand\ v1.31.jar`
-10. Select each of the changed characters and load their patch from `<repo>/char-mods/<character>.dat`
-11. Save your changes and close Crazy Hand
-12. Open up Melee Code Manager and open the iso in it
-13. Go to "Default Game Settings," select set to Tournament Defaults and save
-14. Go to "Mods Library" and add a path to "mcm-mods.txt"
-15. Enable the Unlock mod
-16. Create a patch via `xdelta3 -e -s vanilla-melee.iso dylans-edition.iso melee-dylans-edition-<version>.patch`
+8. Replace Y.L.'s CSS icon with Link's to make a duplicate
+9. Close D.T.W
+10. Open up Melee Code Manager and open the iso in it
+11. Go to "Default Game Settings," select set to Tournament Defaults and save
+12. Go to "Mods Library" and add a path to "mcm-mods.txt"
+13. Enable the mods of the library
+14. Open a terminal and navigate to the `<repo>/crazy-hand/` folder you created. Start crazy hand with the command `java -jar Crazy\ Hand\ v1.31.jar`
+15. Select each of the changed characters and load their patch from `<repo>/char-mods/<character>.dat`
+16. Save your changes and close Crazy Hand
+17. Create a patch via `xdelta3 -e -s vanilla-melee.iso dylans-edition.iso melee-dylans-edition-<version>.patch`
 

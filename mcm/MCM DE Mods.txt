@@ -63,8 +63,6 @@ A0BE0000 7CA0FE70
 ------------- 0x801644BC ---- A0BF0000 -> 38A007FF
 
 
-
-
 	-==-
 
 
@@ -86,3 +84,24 @@ NTSC 1.00 --- 0x8016AB64 ---- 48000008 -> 60000000
 PAL 1.00 ---- 0x8016BE50 ---- 48000008 -> 60000000
 NTSC 1.01 --- 0x8016B18C ---- 48000008 -> 60000000
 NTSC 1.02 --- 0x8016B480 ---- 48000008 -> 60000000
+
+
+	-==-
+
+
+Zelda is Permanently Sheik at CSS
+Selecting Zelda will have the player start the match as Sheik.
+Announcer even says "Sheik"!
+[Achilles]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.02 --- 0x803F0CC8 ---- 12120100 -> 12130200
+
+
+	-==-
+
+
+Remove Characters From CSS
+- YL
+[??]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.02 --- 0x803F0D00 ---- 14150200 -> 06060200
